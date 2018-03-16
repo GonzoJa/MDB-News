@@ -1,0 +1,19 @@
+{
+  "name": "mdb-news",
+  "version": "1.0.0",
+  "description": "newsdb",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GonzoJa/MDB-News.git"
+  },
+  "author": "Jason",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GonzoJa/MDB-News/issues"
+  },
+  "homepage": "https://github.com/GonzoJa/MDB-News#readme"
+}

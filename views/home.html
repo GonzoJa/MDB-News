@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Mongo Scraper</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Saved Articals</a>
+      </li>
+
+    
+    <form class="form-inline my-2 my-lg-0">
+      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="Click here to catch up on some entertaining reads!">Scrape New Articles!</button>
+    </form>
+  </ul>
+  </div>
+</nav>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">MONGO SCRAPER</h1>
+    <p class="lead">FROM RECODE.</p>
+  </div>
+</div>
+
+
+  </div>
+    <div class="container-fluid">
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="col-sm-9">
+  
+              {{#each articles}}
+                <h3 data-id="{{this._id}}" class="article-title">{{this.title}}</h3>
+                <a target="_blank" href="{{this.link}}"><button type="button" class="btn btn-info btn-lg">Read Article</button></a>
+                <hr>
+              {{/each}}
+          </div>
+          <div class="col-sm-3">
+            <h3>Comments...</h3>
+            <div id="results"></div>
+          </div>
+      </div>
+  </div>
+    </div>
+  
+  
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
